@@ -1,0 +1,10 @@
+
+/* kolom judul di index */
+.hmz-list-judul{
+  min-width: 180px;
+}
+
+/* tags */
+.badge-pill{
+  font-size:.8em;
+}

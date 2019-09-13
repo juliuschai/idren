@@ -1,0 +1,27 @@
+upload ke github
+homepage 
+/profile untuk user ditambahain entri
+user bisa search journal yang ada apa aja.
+list all /mahasiswas
+
+
+videos add views only if it is a new user (use sessions and cookies to decide if videos have been watched or not)
+throttle requests for deleting videos/comments (sensitive actions)
+comment reply
+
+
+journal repository (user bisa upload di profile)
+
+Institut sama SMA bisa pilih (pilihan bedasarkan dari )
+
+Profile
+	Profile picture
+	nama
+	interest (coding python etc)
+	Pendidikan sekarang
+	Provinsi tempat tinggal (Area)
+	Riwayat pendidikan
+
+	journal
+
+INSERT INTO `koneksis` (`id`, `user_id`, `nama_unit_pengelola_jaringan`, `nama_kepala_unit`, `email`, `nomer_hp`, `nama_penanggung_jawab_jaringan`, `nomor_asn`, `alamat_ip`, `nama_penyedia_jasa_internet`, `nama_pic`, `nomor_hp_pic`, `bandwidth_internet`, `nama_penyedia_jasa_internet_2`, `nama_pic_2`, `nomor_hp_pic_2`, `bandwidth_internet_2`, `file_path`, `verified`, `created_at`, `updated_at`) VALUES (1, 69, 'IT-PUJIA LP3M Unismuh Makassar', 'Dr. Ir. Abubakar Idhan, MP', 'e-publisher@unismuh.ac.id', '081241956198', 'Faidul Adzim', 'AS4761', '114.199.90.60', 'Indosat', 'Muhammad Ridwan', '085223226999', '150 Mbps', 'Telkom', 'Muhammad Yasri', '082291270556', '150 Mbps', 'surat/xjrCYnWuc9THiFOpxIV07E76xxybmTWYr68I6Q9r.jpeg', NULL, '2019-08-02 15:11:03', '2019-08-02 15:11:03')

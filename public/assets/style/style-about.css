@@ -1,0 +1,12 @@
+.hmz-nama-univ {
+  font-size: .8em;
+  display: none;
+}
+.hmz-judul {
+  border-left: 1em solid #dc3545;
+}
+.hmz-idren {
+  font-size: 1em;
+  color: #dc3545;
+  font-weight: bold;
+}

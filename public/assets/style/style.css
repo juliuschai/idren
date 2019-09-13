@@ -1,0 +1,72 @@
+:root {
+  --abuabu: #f9f9f9;
+  --abutua: #f1f1f1;
+  --danger: #dc3545;
+  --dangertua: #950412;
+}
+.hmz-bg-abu2 {
+  background-color: var(--abuabu);
+  border-bottom: 1px solid var(--abutua);
+  border-top: 1px solid var(--abutua);
+}
+.hmz-bg-danger {
+  background-color: var(--danger);
+  border-bottom: 1px solid var(--abutuatua);
+  border-top: 1px solid var(--abutuatua);
+}
+#curveUpColor path {
+  fill: var(--danger);
+  stroke: var(--danger);
+}
+#clouds path {
+  fill: var(--abutua);
+  stroke: var(--abutua);
+}
+
+/* mobile navbar */
+.blog-header {
+  line-height: 1;
+  border-bottom: 1px solid #e5e5e5;
+}
+.blog-header-logo {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-size: 2.25rem;
+}
+.blog-header-logo:hover {
+  text-decoration: none;
+}
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+.nav-scroller .nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+.nav-scroller .nav-link {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: .875rem;
+}
+.flex-auto {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+.hmz-navbar-mobile {
+  -webkit-transition: all 350ms cubic-bezier(.70, 0, .34, 1); 
+	-moz-transition: all 350ms cubic-bezier(.70, 0, .34, 1);
+  transition: all 350ms cubic-bezier(.70, 0, .34, 1);
+}
+.hmz-navbar-mobile.hidden{
+  top:-160px;
+}

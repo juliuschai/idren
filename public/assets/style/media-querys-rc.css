@@ -1,0 +1,44 @@
+/* khasus kusus */
+@media only screen and (max-width: 320px) {
+  .hmz-min-show{
+    margin-top: 1em;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .hmz-quotes{
+    display: none;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .hmz-quotes{
+    display: none;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .hmz-quotes{
+    display: inline-block;
+    font-size: 1em;
+  }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .hmz-quotes{
+    display: inline-block;
+    font-size: 1em;
+  }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .hmz-quotes{
+    display: inline-block;
+    font-size: 1em;
+  }
+}
