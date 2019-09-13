@@ -2,10 +2,9 @@ Tutorial Install
 
 Untuk contoh disini menggunakan domain: "idrenexample.com" dan "www.idrenexample.com"
 File: C:\Windows\System32\drivers\etc\hosts
-<div style="color: red">
-    127.0.01 idrenexample.com www.idrenexample.com 
-</div>
-
+```
+127.0.0.1 idrenexample.com www.idrenexample.com
+```
 Tambahkan baris berikut di file httpd-vhosts.conf anda. 
 File: C:\xampp\apache\conf\extra\httpd-vhosts.conf
 ```
