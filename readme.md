@@ -3,23 +3,21 @@ Tutorial Install
 Untuk contoh disini menggunakan domain: "idrenexample.com" dan "www.idrenexample.com"
 File: C:\Windows\System32\drivers\etc\hosts
 <div style="color: red">
-127.0.01 idrenexample.com www.idrenexample.com 
+    127.0.01 idrenexample.com www.idrenexample.com 
 </div>
 
-Tambahkan baris berikut di file httpd-vhosts.conf anda. ()
+Tambahkan baris berikut di file httpd-vhosts.conf anda. 
 File: C:\xampp\apache\conf\extra\httpd-vhosts.conf
-<div style="color: red">
-\<VirtualHost idrenexample.com:80\>
-
-    ServerName idrenexample.com
-    ServerAlias www.idrenexample.com
-    DocumentRoot "C:\xampp\htdocs\idren\public"
-
-    \<Directory "c:/xampp/htdocs/idren/public"\>
-        Require all granted
-    \</Directory\>
-\</VirtualHost\>
-</div>
+```
+<VirtualHost idrenexample.com:80>
+   ServerName idrenexample.com
+   ServerAlias www.idrenexample.com
+   DocumentRoot "C:\xampp\htdocs\idren\public">
+   <Directory "c:/xampp/htdocs/idren/public"\>
+       Require all granted
+   </Directory>
+</VirtualHost>`
+```
 Restart xampp server for the changes to take effect
 
 Buka phpMyAdmin. Pencet privileges untuk tambah user
