@@ -15,7 +15,7 @@ File: C:\xampp\apache\conf\extra\httpd-vhosts.conf
    <Directory "c:/xampp/htdocs/idren/public"\>
        Require all granted
    </Directory>
-</VirtualHost>`
+</VirtualHost>
 ```
 Restart xampp server for the changes to take effect
 
