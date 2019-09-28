@@ -1,5 +1,6 @@
 Tutorial Install
 
+rename .env.sample file to .env file. Do mind that there might be some entries that will need changing.
 Untuk contoh disini menggunakan domain: "idrenexample.com" dan "www.idrenexample.com"
 File: C:\Windows\System32\drivers\etc\hosts
 ```
@@ -15,7 +16,7 @@ File: C:\xampp\apache\conf\extra\httpd-vhosts.conf
    <Directory "c:/xampp/htdocs/idren/public"\>
        Require all granted
    </Directory>
-</VirtualHost>`
+</VirtualHost>
 ```
 Restart xampp server for the changes to take effect
 
