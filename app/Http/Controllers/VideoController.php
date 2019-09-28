@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\DB;
+use App\University;
 use App\User;
 use App\Video;
 use App\Comment;
@@ -42,6 +43,12 @@ class VideoController extends Controller
 
         $user = User::findorfail($video->user_id);
         $user->views = $user->views + 1;
+
+        $university = University::find($user->instansi_id);
+        if ($university) {
+        	$university->views = $university->views + 1;
+        	$university->save();
+        }
         $user->save();
 
 		$playlists = 
@@ -77,7 +84,8 @@ class VideoController extends Controller
         $dosens = 
         	User::where('peran', 2)
         	->orderBy('views')
-        	->get(['name', 'views']);
+        	->select(['name', 'views', 'profile_picture'])
+        	->paginate(5);
 
 		$videos->appends(['keyword' => $keyword]);
 		return view('video.search', compact('videos', 'dosens'));

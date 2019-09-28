@@ -16,7 +16,9 @@ class CreateUniversitiesTable extends Migration
         Schema::create('universities', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('kode_pt');
+            $table->string('logo')->nullable();
             $table->string('instansi', 100);
+            $table->integer('views')->default(0);
             $table->string('provinsi', 30)->nullable();
             $table->string('kategori', 13)->nullable();
             $table->string('status')->nullable();

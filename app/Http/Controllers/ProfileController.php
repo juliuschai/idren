@@ -30,7 +30,7 @@ class ProfileController extends Controller
         $user = 
         	User::where('username', $username)
         	->firstorfail();
-        $user->instansiName = University::find(auth()->user()->instansi_id)->instansi;
+        $user->instansiName = University::find($user->instansi_id)->instansi;
 
         $playlists = 
         	Playlist::where('user_id', $user->id)

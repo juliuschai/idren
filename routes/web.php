@@ -11,10 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome-new');
-});
-
 Route::get('about', function () {
         return view('info.about');
 })->name('about');
@@ -24,6 +20,8 @@ Route::get('test', function () {
 });
 */
 Auth::routes();
+
+Route::get('/', 'WelcomeController@index');
 
 Route::get('home', 'HomeController@index')->name('home');
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout')->name('logout');

@@ -1,4 +1,17 @@
-upload ke github
+add views for instansi column, 
+add views on instansi.views column whenever video views added
+welcome page get first 4 instansi, get videos of said instansi
+Get Trending vids (views/time)
+
+RefCode
+ - Practically lookup table from short to long url video link
+
+Matakuliah video
+- video tag adalah matakuliah
+- matakuliah auto complete
+- buat table yang isinya list matakuliah yang ada
+- matakuliah relevancy (kemiripan dengan 1 sama lain) (figure out the design to implement this)
+
 homepage 
 /profile untuk user ditambahain entri
 user bisa search journal yang ada apa aja.

@@ -21,6 +21,16 @@ idREN
               Search
             </button>
           </form>
+          <div>Temp Dosen Display</div>
+          <table>
+            @foreach($dosens as $dosen)
+            <tr>
+              <td><img class="rounded-circle" style="height: 50px; width: 50px" src="{{asset($dosen->profile_picture ? 'profilepictures/'.$dosen->profile_picture : 'profilepictures/dummy.png')}}" alt=""></td>
+              <td>{{ $dosen->name }}</td>
+              <td>{{ $dosen->views }} views</td>
+            </tr>
+            @endforeach
+          </table>
           <div class="table-responsive">
             <table class="table table-hover">
               <thead>

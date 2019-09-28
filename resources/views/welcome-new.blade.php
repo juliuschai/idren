@@ -9,6 +9,33 @@ idREN
   <div class="container-fluid pt-5 pr-0 pb-5 mt-5 mb-5">
     <div class="row mr-3 pb-4 mt-5 pt-2">
       <div class="col-md-5 ml-5 pr-0 mr-0 ">
+          <div>Temp Dosen Display</div>
+          <table>
+            @foreach($dosens as $dosen)
+            <tr>
+              <td><img class="rounded-circle" style="height: 50px; width: 50px" src="{{asset($dosen->profile_picture ? 'profilepictures/'.$dosen->profile_picture : 'profilepictures/dummy.png')}}" alt=""></td>
+              <td>{{ $dosen->name }}</td>
+              <td>{{ $dosen->views }} views</td>
+              <td><a href="{{route('profile.view', ['username' => $dosen->username])}}">link</a></td>
+            </tr>
+            @endforeach
+          </table>
+          <div>Temp Vid Display</div>
+          @foreach($universities as $university)
+          <table border="1px">
+            <tr>
+              <td colspan="4">{{$university->instansi}}</td>
+            </tr>
+            @foreach($university->videos as $video)
+            <tr>
+              <td><img class="rounded-circle"  src="{{asset($video->thumbnail ? 'thumbnail/'.$video->thumbnail : 'profilepictures/dummy.png')}}" alt=""></td>
+              <td>{{ $video->judul }}</td>
+              <td>{{ $video->views }} views</td>
+              <td><a href="{{route('video.view', ['id' => $video->file_name])}}">link</a></td>
+            </tr>
+            @endforeach
+          </table>
+          @endforeach
         <h1 class="font-weight-bold" style="font-size: 54px">Indonesia<br>
           research and<br>
           education network</h1>
