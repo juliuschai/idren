@@ -12,8 +12,8 @@ File: C:\xampp\apache\conf\extra\httpd-vhosts.conf
 <VirtualHost idrenexample.com:80>
    ServerName idrenexample.com
    ServerAlias www.idrenexample.com
-   DocumentRoot "C:\xampp\htdocs\idren\public">
-   <Directory "c:/xampp/htdocs/idren/public"\>
+   DocumentRoot "C:\xampp\htdocs\idren\public"
+   <Directory "c:/xampp/htdocs/idren/public">
        Require all granted
    </Directory>
 </VirtualHost>
