@@ -22,8 +22,19 @@ Route::get('test', function () {
 Auth::routes();
 
 Route::get('/', 'WelcomeController@index');
-
+Route::get('media', 'WelcomeController@media')->name('media');
+Route::get('resources', 'WelcomeController@resources')->name('resources');
+Route::get('research-platform', 'WelcomeController@research_platform')->name('research-platform');
+Route::get('eduroam', 'WelcomeController@eduroam')->name('eduroam');
+Route::get('admin', 'HaluController@index')->name('admin');
 Route::get('home', 'HomeController@index')->name('home');
+Route::get('home/requestadmin', 'HomeController@requestadmin')->name('home.requestadmin');
+Route::post('home/requestadmin', 'HomeController@saveRequestAdmin');
+Route::get('p2', 'HaluController@index')->name('p2');
+Route::get('p2/adminconnection/accept/{id}', 'HaluController@requestadminaccept')->name('p2.adminconnection.accept');
+Route::get('p2/adminconnection/refuse/{id}', 'HaluController@requestadminrefuse')->name('p2.adminconnection.refuse');
+Route::get('p2/requestconnection/accept/{id}', 'HaluController@requestconnectionaccept')->name('p2.requestconnection.accept');
+Route::get('p2/requestconnection/refuse/{id}', 'HaluController@requestconnectionrefuse')->name('p2.requestconnection.refuse');
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout')->name('logout');
 
 Route::get('profile/view', 'ProfileController@indexProfile')->name('profile.view');
