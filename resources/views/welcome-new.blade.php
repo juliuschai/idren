@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-idREN
+iDREN
 @endsection
 
 @section('content')
@@ -9,7 +9,7 @@ idREN
   <div class="container-fluid pt-5 pr-0 pb-5 mt-5 mb-5">
     <div class="row mr-3 pb-4 mt-5 pt-2">
       <div class="col-md-5 ml-5 pr-0 mr-0 ">
-          <div>Temp Dosen Display</div>
+          {{-- <div>Temp Dosen Display</div>
           <table>
             @foreach($dosens as $dosen)
             <tr>
@@ -35,7 +35,7 @@ idREN
             </tr>
             @endforeach
           </table>
-          @endforeach
+          @endforeach --}}
         <h1 class="font-weight-bold" style="font-size: 54px">Indonesia<br>
           research and<br>
           education network</h1>
@@ -64,40 +64,73 @@ idREN
   </div>
 
   <div class="container-fluid px-0 mt-4">
-    <div class="col-md-12 my-3">
       <div class="hmz-member owl-carousel owl-theme">
         <div class="hmz-item">
-          <img src="assets/img/univ/IPB.png" alt="" class="">
+          <img src="assets/img/univ/IPB.png" alt="">
           <!-- <p class="hmz-nama-univ text-dark text-center">Institut Teknologi Bandung</p> -->
         </div>
         <div class="hmz-item">
-          <img src="assets/img/univ/ITB.png" alt="" class="img-fluid">
+          <img src="assets/img/univ/ITB.png" alt="">
         </div>
         <div class="hmz-item">
-          <img src="assets/img/univ/ITS.png" alt="" class="img-fluid">
+          <img src="assets/img/univ/ITS.png" alt="">
         </div>
         <div class="hmz-item">
-          <img src="assets/img/univ/UGM.png" alt="" class="img-fluid">
+          <img src="assets/img/univ/UGM.png" alt="">
         </div>
         <div class="hmz-item">
-          <img src="assets/img/univ/UI.png" alt="" class="img-fluid">
+          <img src="assets/img/univ/UI.png" alt="">
         </div>
         <div class="hmz-item">
-          <img src="assets/img/univ/UNAIR.png" alt="" class="img-fluid">
+          <img src="assets/img/univ/UNAIR.png" alt="">
         </div>
         <div class="hmz-item">
-          <img src="assets/img/univ/UNJ.png" alt="" class="img-fluid">
+          <img src="assets/img/univ/UNJ.png" alt="">
         </div>
         <div class="hmz-item">
-          <img src="assets/img/univ/UPI.png" alt="" class="img-fluid">
+          <img src="assets/img/univ/UPI.png" alt="">
         </div>
         <div class="hmz-item">
-          <img src="assets/img/univ/UB.png" alt="" class="img-fluid">
+          <img src="assets/img/univ/UB.png" alt="">
         </div>
+        <div class="hmz-item">
+          <img src="assets/img/univ/unimal.png" alt="">
+        </div>
+      </div>
+  </div>
+  <div class="container mt-4 pt-5">
+    <div class="row">
+      <div class="col-sm">
+	  <br><br>
+      <img src="assets/img/gurl.jpg" alt="Picture_Front" width="100%">
+      </div>
+      <div class="col-sm">
+        <h1 class="text-center pt-5 pb-5 font-weight-bold">IDREN</h2>
+        <p class="text-center">
+            Jejaring Riset dan Edukasi Indonesia (Indonesia Research and Education Networks, IDREN) adalah infrastruktur jaringan khusus yang menghubungkan institusi dan komunitas riset dan pendidikan di Indonesia. Jaringan ini didedikasikan untuk konektivitas komunikasi data yang diperlukan untuk memungkinkan komunitas para peneliti, akademisi dan pengembang untuk berkolaborasi bersama. 
+            Infrastruktur jaringan IDREN terwujud berkat dukungan dan kolaborasi antara komunitas industri telekomunikasi (operator jaringan, penyedia layanan internet) yang mengelola konektivitas sampai layer dua (fisik) dan komunitas riset dan pendidikan  yang mengelola konektivitas di layer tiga (jaringan), serta dukungan konektivitas menuju REN global (TEIN) dari Kementerian Riset, Teknologi dan Pendidikan Tinggi.
+            Dengan konektivitas IDREN ke REN global melalui jaringan TEIN (Trans Euroasia Information Network).            
+        </p>
       </div>
     </div>
   </div>
+  <div class="container">
+    <div class="container">
+      <div data-aos="fade-up" data-aos-duration="1500">
+          <h1 class="text-center pt-5 pb-5 font-weight-bold">How to Connect</h1>
+        </div>
+        <p>
+            <b>Institusi Riset/Pendidikan/Industri dapat bergabung dengan :</b>
+Mendaftar (sign up) melalui website idren.id, atau ke hello@idren.id sebagai admin institusi.
+Mengisi form permintaan koneksi IDREN melalui admin institusi. 
+Menunggu tanggapan dari tim admin jaringan IDREN.</p><p>
+<b>Pribadi (dosen, peneliti, mahasiswa, praktisi industri) dapat bergabung dengan :</b>
+Mendaftar (sign up) melalui website idren.id atau ke hello@idren.id sebagai anggota/dosen/mahasiswa/umum.
+Menunggu validasi dan konfirmasi dari admin institusi.
 
+        </p>
+    </div>
+  </div>
   <!-- ################# Header selesai ################# -->
   <div class="container">
     <div data-aos="fade-up" data-aos-duration="1500">
@@ -163,8 +196,19 @@ idREN
             </div>
           </div>
         </div>
-
       </div>
+      <div class="col-md-4 pb-4 pt-4">
+          <div data-aos="fade-up" data-aos-duration="1500">
+            <div class="card mx-auto" style="width: 18rem;">
+              <img src="assets/img/pablo-page-not-found.png" class="card-img-top" alt="Journal Repository">
+              <div class="card-body">
+                <h5 class="card-title">Eduroam</h5>
+                <p class="card-text">Any local journal from all over Indonesia in your hand.</p>
+                <a href="eduroam" class="btn btn-primary">Link</a>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
   </div>
 
@@ -172,10 +216,12 @@ idREN
 
 <div data-aos="fade-up" data-aos-duration="1500" class="aos-init aos-animate">
     <div class="container">
-      <h1 class="text-center pt-5 pb-5 font-weight-bold">Our Lecturer</h1>
+      <h1 class="text-center pt-5 pb-5 font-weight-bold">Courses</h1>
       <div class="owl-carousel owl-theme owl-loaded owl-drag">
-      <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1815px;"><div class="owl-item active" style="width: 202.5px; margin-right: 100px;"><div class="item">
-          <div class="card" style="width: 18rem;">
+      <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1815px;">
+        <div class="owl-item active" style="width: 202.5px; margin-right: 100px;">
+           <div class="item">
+        <div class="card" style="width: 18rem;">
             <img src="assets/img/pablo-bitcoin-mining.png" class="card-img-top" alt="Network Connectivity">
             <div class="card-body">
               <h5 class="card-title">Network Connectivity</h5>
@@ -225,7 +271,6 @@ idREN
     </div>
   </div>
 
-  <!-- SCRIPT -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
@@ -235,7 +280,6 @@ idREN
   <script>
     var lastScroll = 0, hundert;
     $(window).scroll(function () {
-      //NAVIGATION FADEIN/OUT
       var st = $(document).scrollTop();
       if (st > 250 && st > lastScroll) {
         $('.hmz-navbar-mobile').addClass('hidden');
@@ -263,6 +307,10 @@ idREN
         loop: true,
         margin: 100,
         responsiveClass: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        dots: true,
         responsive: {
           0: {
             items: 1,
@@ -284,9 +332,9 @@ idREN
   <script>
     // punyanya owl craousel nya member
     $('.hmz-member').owlCarousel({
-      stagePadding: 50,
+      stagePadding: 0,
       loop: true,
-      margin: 30,
+      margin: 10,
       nav: false,
       autoplay: true,
       autoplayTimeout: 800,
@@ -304,5 +352,26 @@ idREN
         }
       }
     })
+  </script>
+  <script>
+  $(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    if (this.hash !== "") {
+      event.preventDefault();
+
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
   </script>
 @endsection

@@ -4,6 +4,41 @@
 idREN Dashboard
 @endsection
 
+@section('red-button')
+<div class="col-md-12 text-center pt-3">
+	<a class="mt-5 text-light text-center text-decoration-none" href="{{ route('home.requestadmin') }}" role="button">
+		<p class="bg-danger rounded-pill">Jadi Admin Instansi</p>
+	</a>
+</div>
+@endsection
+
+@section('side-menu')
+@if ($user->peran != 1)
+	<a class="d-block text-light text-left ml-2 text-decoration-none" href="{{route('koneksi')}}">
+		<p>Koneksi Request</p>
+	</a>
+@endif
+
+<a class="d-block text-light text-left ml-2 text-decoration-none" href="#">
+	<p>Beranda saya</p>
+</a>
+<a class="d-block text-light text-left ml-2 text-decoration-none" href="#">
+	<p>Layanan</p>
+</a>
+<a class="d-block text-light text-left ml-2 text-decoration-none" href="#">
+	<p>Event</p>
+</a>
+<a class="d-block text-light text-left ml-2 text-decoration-none" href="#">
+	<p>Help & feedback</p>
+</a>
+<a class="d-block text-light text-left ml-2 text-decoration-none" href="{{route('about')}}">
+	<p>FAQ</p>
+</a>
+<a class="d-block text-light text-left ml-2 text-decoration-none" href="{{route('logout')}}">
+	<p>Logout</p>
+</a>
+@endsection
+
 @section('content')
 <!-- our services -->
 <div class="container">
