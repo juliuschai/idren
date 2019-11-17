@@ -14,6 +14,10 @@
 Route::get('about', function () {
         return view('info.about');
 })->name('about');
+
+Route::get('coming-soon', function () {
+        return view('info.coming-soon');
+})->name('coming-soon');
 /*
 Route::get('test', function () {
         return redirect('/profile')->with('new', 'true');

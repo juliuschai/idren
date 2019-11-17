@@ -94,7 +94,7 @@ iDREN
           <img src="assets/img/univ/UB.png" alt="">
         </div>
         <div class="hmz-item">
-          <img src="assets/img/univ/unimal.png" alt="">
+          <img src="assets/img/univ/UNIMAL.png" alt="">
         </div>
       </div>
   </div>
