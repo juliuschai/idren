@@ -31,6 +31,46 @@
 
 <body>
   <div class="container-fluid">
+    <div class="modal fade" id="jadiAdminInstansi_box" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="jadiAdminInstansi_label">Formulir Pendaftaran Admin Instansi</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form method="POST" action="kirim_formulir_pendaftaran_admin_instansi.php">
+              <div class="form-group">
+                <label for="jai_nama" class="col-form-label">Nama:</label>
+                <input type="text" name="jai_name" class="form-control" id="jai_nama">
+              </div>
+              <div class="form-group">
+                <label for="jai_birthplace" class="col-form-label">Tempat Lahir:</label>
+                <input type="text" name="jai_birthplace" class="form-control" id="jai_birthplace">
+              </div>
+              <div class="form-group">
+                <label for="jai_birthday" class="col-form-label">Tanggal Lahir:</label>
+                <input type="date" name="jai_birthday" class="form-control" id="jai_birthday">
+              </div>
+              <div class="form-group">
+                <label for="jai_file1" class="col-form-label">Surat Anbu pertama:</label>
+                <input type="file" name="jai_file1" class="form-control-file" id="jai_file1">
+              </div>
+              <div class="form-group">
+                <label for="jai_file2" class="col-form-label">Surat Resmi Danzo:</label>
+                <input type="file" name="jai_file2" class="form-control-file" id="jai_file2">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+            <button type="button" class="btn btn-primary" name="jai_submit">Kirim Formulir</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="row">
       <div class="col-md-2" style="background-color: #333;">
         <div class="container px-0 sticky-top">
@@ -38,37 +78,10 @@
             <div class="col-md-12 text-center">
               <img src="assets/img/logo-white.png" class="img-fluid mt-4 mb-5" width="40em" alt="">
             </div>
-            <div class="col-md-12 text-center pt-3">
-              <a class="mt-5 text-light text-center text-decoration-none" href="#">
-                <p class="bg-danger rounded-pill">Admin Instansi</p>
-              </a>
-            </div>
+            @yield('red-button')
             <div class="col-md-12 pr-0 text-center mt-2">
               <div class="menu">
-                <a class="d-block text-light text-left ml-2 text-decoration-none" href="{{route('koneksi')}}">
-                  <p>Koneksi Request</p>
-                </a>
-                <a class="d-block text-light text-left ml-2 text-decoration-none" href="#">
-                  <p>Beranda saya</p>
-                </a>
-                <a class="d-block text-light text-left ml-2 text-decoration-none" href="#">
-                  <p>Layanan</p>
-                </a>
-                <a class="d-block text-light text-left ml-2 text-decoration-none" href="#">
-                  <p>Event</p>
-                </a>
-                <a class="d-block text-light text-left ml-2 text-decoration-none" href="#">
-                  <p>Help & feedback</p>
-                </a>
-                <a class="d-block text-light text-left ml-2 text-decoration-none" href="{{route('about')}}">
-                  <p>About</p>
-                </a>
-                <a class="d-block text-light text-left ml-2 text-decoration-none" href="{{route('profile.change')}}">
-                  <p>Profile</p>
-                </a>
-                <a class="d-block text-light text-left ml-2 text-decoration-none" href="{{route('logout')}}">
-                  <p>Logout</p>
-                </a>
+                @yield('side-menu')
               </div>
             </div>
           </div>
@@ -80,7 +93,7 @@
           <h5 class="my-0 mr-md-auto font-weight-normal">
             <!-- <img src="assets/img/logo.png" alt="" class="" style="width: 8em;height: auto;"> -->
           </h5>
-          <nav class="my-2 my-md-0 mr-md-3" style="">
+          <!-- <nav class="my-2 my-md-0 mr-md-3" style="">
             <a class="p-2 text-dark text-decoration-none" href="{{route('koneksi')}}">Koneksi Request</a>
             <a class="p-2 text-dark text-decoration-none" href="{{route('about')}}">About idREN</a>
             <a class="p-2 text-dark text-decoration-none" href="#">Resources</a>
@@ -89,11 +102,11 @@
             <a class="p-2 text-dark text-decoration-none" href="#">Media</a>
             <a class="p-2 text-dark text-decoration-none" href="{{route('profile.change')}}">Profile</a>
             <a class="p-2 text-dark text-decoration-none" href="{{route('logout')}}">Logout</a>
-          </nav>
+          </nav> -->
 
-          <a href="#" class="px-4 text-decoration-none" style="border-right: 1px solid #f0f0f0;border-left: 1px solid #f0f0f0;">
+          <a href="{{route('profile.change')}}" class="px-4 text-decoration-none" style="border-right: 1px solid #f0f0f0;border-left: 1px solid #f0f0f0;">
             <div class="d-inline-block rounded-circle bg-danger p-1">
-              <img class="rounded-circle" src="{{asset(auth()->user()->profile_picture ? 'profilepictures/'.auth()->user()->profile_picture : 'profilepictures/dummy.png')}}" alt="">
+              <img class="rounded-circle" style="width:50px;height:50px;" src="{{asset(auth()->user()->profile_picture ? 'profilepictures/'.auth()->user()->profile_picture : 'profilepictures/dummy.png')}}" alt="">
             </div>
             <p class="d-inline text-dark ml-1">{{ auth()->user()->name }}</p>
           </a>
