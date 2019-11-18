@@ -33,4 +33,20 @@ class WelcomeController extends Controller
         }
     	return view('welcome-new', compact('dosens', 'universities'));
     }
+	public function media()
+	{
+		return view('welcome-media');
+	}
+	public function resources()
+	{
+		return view('welcome-resources');
+	}
+	public function research_platform()
+	{
+		return view('welcome-research-platform');
+	}
+	public function eduroam()
+	{
+		return view('welcome-eduroam');
+	}
 }
