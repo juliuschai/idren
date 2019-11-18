@@ -35,7 +35,7 @@
 
 </head>
 
-<body style="background-color: #F6F3FF">
+<body>
 	<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
 		<a class="navbar-brand" href="#">
 			<img src="{{ asset('assets/img/suportedby/Logo_of_the_Ministry_of_Research,_Technology,_and_Higher_Education_of_the_Republic_of_Indonesia.png') }}" height="auto" width="54px">
@@ -46,7 +46,7 @@
 		<a class="navbar-brand" href="#">
 			<img src="{{ asset('assets/img/suportedby/250x113Indosat_Ooredoo_logo.svg.png') }}" height="auto" width="54px">
 		</a>
-		<a class="navbar-brand" href="#">
+		<a class="navbar-brand" href="/">
 			<img src="{{ asset('assets/img/logo-baru.jpg') }}" height="auto" width="54px">
 		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,19 +63,16 @@
 					<a class="nav-link" href="{{route('about')}}">About IdREN</a>
 				</li>
 				<li class="nav-item btn">
-					<a class="nav-link" href="#">Resources</a>
+					<a class="nav-link" href="{{route('resources')}}">Resources</a>
 				</li>
 				<li class="nav-item btn">
 					<a class="nav-link" href="#">Services</a>
 				</li>
 				<li class="nav-item btn">
-					<a class="nav-link" href="{{route('research')}}">Research</a>
+					<a class="nav-link" href="{{route('research-platform')}}">Research</a>
 				</li>
 				<li class="nav-item btn">
-					<a class="nav-link" href="#">Media&nbsp;</a>
-				</li>
-				<li class="nav-item btn">
-					<a class="nav-link" href="{{route('profile.change')}}">Profile</a>
+					<a class="nav-link" href="{{route('media')}}">Media&nbsp;</a>
 				</li>
 				@auth {{-- if logged in --}}
 					<li class="nav-item">
@@ -135,11 +132,11 @@
         <div class="row">
           <div class="col">
             <img src="{{ asset('assets/img/Alternatif Logo-03.jpg') }}" alt="Idren" height="80px" width="80px"><br><br>
-            <a href="#" style="color:black; font-size:20px">About IDren</a><br><br>
-            <a href="#" style="color:black; font-size:20px">Resources</a><br><br>
+            <a href="{{route('about')}}" style="color:black; font-size:20px">About IDren</a><br><br>
+            <a href="{{route('resources')}}" style="color:black; font-size:20px">Resources</a><br><br>
             <a href="#" style="color:black; font-size:20px">Services</a><br><br>
-            <a href="#" style="color:black; font-size:20px">Media Platform</a><br><br>
-            <a href="#" style="color:black; font-size:20px">Media</a><br><br>
+            <a href="{{route('research-platform')}}" style="color:black; font-size:20px">Research Platform</a><br><br>
+            <a href="{{route('media')}}" style="color:black; font-size:20px">Media</a><br><br>
           </div>
           <div class="col mt-2 pt-2"><br>
             <h3>Sitemap</h3><br>
@@ -152,14 +149,12 @@
         </div>
         <div class="row">
           <div class="col mt-5 pt-3">
-            <img src="{{ asset('assets/img/Alternatif Logo-03.jpg') }}" alt="" height="50px" width="50px">
-            <img src="{{ asset('assets/img/Alternatif Logo-03.jpg') }}" alt="" height="50px" width="50px">
-            <img src="{{ asset('assets/img/Alternatif Logo-03.jpg') }}" alt="" height="50px" width="50px">
-            <img src="{{ asset('assets/img/Alternatif Logo-03.jpg') }}" alt="" height="50px" width="50px">
-            <img src="{{ asset('assets/img/Alternatif Logo-03.jpg') }}" alt="" height="50px" width="50px">
+            <img src="{{ asset('assets/img/email.svg') }}" alt="" height="25px" width="50px">
+            <a href="https://www.youtube.com/watch?v=5dPYWWZj1AM"><img src="{{ asset('assets/img/indra.svg') }}" alt="" height="50px" width="50px"></a>
+            <a href="https://www.instagram.com/idren.id/"><img src="{{ asset('assets/img/instagram.svg') }}" alt="" height="27px" width="50px"></a>
           </div>
           <div class="col mt-4 pt-5">
-            <h4>Copyright © 2019 IDren</h4>
+            <h4>Copyright © <?php echo date("Y"); ?> IDren</h4>
           </div>
         </div>
       </div>
