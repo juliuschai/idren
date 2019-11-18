@@ -66,13 +66,13 @@
 					<a class="nav-link" href="{{route('resources')}}">Resources</a>
 				</li>
 				<li class="nav-item btn">
-					<a class="nav-link" href="#">Services</a>
+					<a class="nav-link" href="{{route('coming-soon')}}">Services</a>
 				</li>
 				<li class="nav-item btn">
-					<a class="nav-link" href="{{route('research-platform')}}">Research</a>
+					<a class="nav-link" href="{{route('coming-soon')}}">Research</a>
 				</li>
 				<li class="nav-item btn">
-					<a class="nav-link" href="{{route('media')}}">Media&nbsp;</a>
+					<a class="nav-link" href="{{route('coming-soon')}}">Media&nbsp;</a>
 				</li>
 				@auth {{-- if logged in --}}
 					<li class="nav-item">
@@ -134,9 +134,9 @@
             <img src="{{ asset('assets/img/Alternatif Logo-03.jpg') }}" alt="Idren" height="80px" width="80px"><br><br>
             <a href="{{route('about')}}" style="color:black; font-size:20px">About IDren</a><br><br>
             <a href="{{route('resources')}}" style="color:black; font-size:20px">Resources</a><br><br>
-            <a href="#" style="color:black; font-size:20px">Services</a><br><br>
-            <a href="{{route('research-platform')}}" style="color:black; font-size:20px">Research Platform</a><br><br>
-            <a href="{{route('media')}}" style="color:black; font-size:20px">Media</a><br><br>
+            <a href="{{route('coming-soon')}}" style="color:black; font-size:20px">Services</a><br><br>
+            <a href="{{route('coming-soon')}}" style="color:black; font-size:20px">Research Platform</a><br><br>
+            <a href="{{route('coming-soon')}}" style="color:black; font-size:20px">Media</a><br><br>
           </div>
           <div class="col mt-2 pt-2"><br>
             <h3>Sitemap</h3><br>
