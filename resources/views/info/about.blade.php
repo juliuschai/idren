@@ -8,7 +8,10 @@
 	<div class="container mt-4 pt-5">
     <div class="row">
       <div class="col-sm-5 my-auto mx-auto">
-		<img src="assets/img/gurl.jpg" alt="" width="100%">
+        <video width="450px" height="250px" controls>
+          <source src="{{ asset('videos/IDrenAbout.mp4') }}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
       <div class="col-sm">
         <h1 class="text-center pt-5 pb-5 font-weight-bold">Pengantar IDREN</h2>
