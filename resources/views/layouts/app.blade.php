@@ -46,6 +46,9 @@
 		<a class="navbar-brand" href="#">
 			<img src="{{ asset('assets/img/suportedby/250x113Indosat_Ooredoo_logo.svg.png') }}" height="auto" width="54px">
 		</a>
+    <a class="navbar-brand" href="#">
+      <img src="{{ asset('assets/img/suportedby/Moratelindo.png') }}" height="auto" width="54px">
+    </a>
 		<a class="navbar-brand" href="/">
 			<img src="{{ asset('assets/img/logo-baru.jpg') }}" height="auto" width="54px">
 		</a>

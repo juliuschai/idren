@@ -12,3 +12,4 @@ yarn-error.log
 
 # Julius Custom Ignore
 /1 Local Files
+*.gz
